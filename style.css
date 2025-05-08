@@ -356,3 +356,78 @@ footer {
   height: 24px;
   filter: invert(70%) sepia(36%) saturate(552%) hue-rotate(6deg) brightness(95%) contrast(91%);
 }
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .acoes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  header.topo-com-imagem {
+    height: 70vh;
+    background-position: top;
+  }
+
+  header .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  header .overlay h3 {
+    font-size: 1rem;
+  }
+
+  .descricao-colunas {
+    flex-direction: column;
+  }
+
+  .coluna {
+    min-width: 100%;
+  }
+
+  .carrossel img {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .botao {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .acoes {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .botao-centralizado a button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+  }
+
+  header a button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+  }
+}
