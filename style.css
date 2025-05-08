@@ -1,0 +1,358 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+header.topo-com-imagem {
+  background-image: url('img-topo.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 60px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  animation: logoFloat 3s infinite ease-in-out;
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+header h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+/* 🔘 BOTÃO MODERNO */
+header a button,
+.botao-centralizado a button {
+  background-color: #e1cfa5;
+  color: #0a0a0a;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header a button:hover,
+.botao-centralizado a button:hover {
+  background-color: #e1cfa5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+header a button:focus,
+.botao-centralizado a button:focus {
+  outline: 2px solid #e1cfa5;
+  outline-offset: 3px;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.descricao-colunas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.coluna {
+  flex: 1;
+  min-width: 300px;
+  text-align: justify;
+  color: #4f4f4f;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #0a0a0a;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #e1cfa5;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq div p {
+  margin-top: 10px;
+}
+
+.depoimentos-section {
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.depoimentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.depoimentos blockquote {
+  background-color: #f0f0f0;
+  border-left: 4px solid #e1cfa5;
+  padding: 20px;
+  border-radius: 8px;
+  font-style: italic;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #0a0a0a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: auto;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.servicos {
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.galeria-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.servico {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.servico:hover {
+  transform: translateY(-5px);
+}
+
+.servico img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.servico p {
+  padding: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .depoimentos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria-servicos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.trabalhos {
+  margin: 60px auto;
+  max-width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.carrossel-container {
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carrossel {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+  width: max-content;
+}
+
+.carrossel img {
+  height: 300px;
+  width: auto;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.carrossel img:hover {
+  transform: scale(1.03);
+}
+
+.botao-centralizado {
+  margin-top: 20px;
+}
+/* 🔝 NOVO CABEÇALHO ESTILO OBRAFY */
+
+.cabecalho {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #d6b36a;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.botao {
+  background-color: #e1cfa5;
+  color: #0a0a0a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+  background-color: #e1cfa5;
+  transform: translateY(-2px);
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+}
+
+.icon-insta {
+  width: 24px;
+  height: 24px;
+  filter: invert(70%) sepia(36%) saturate(552%) hue-rotate(6deg) brightness(95%) contrast(91%);
+}
