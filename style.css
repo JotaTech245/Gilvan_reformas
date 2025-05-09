@@ -352,8 +352,8 @@ footer {
 }
 
 .icon-insta {
-  width: 24px;
-  height: 24px;
+  width: 60px;
+  height: 60px;
   filter: invert(70%) sepia(36%) saturate(552%) hue-rotate(6deg) brightness(95%) contrast(91%);
 }
 
