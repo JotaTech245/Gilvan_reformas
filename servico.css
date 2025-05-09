@@ -286,4 +286,33 @@ footer {
     text-align: center;
   }
 }
+.contato {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.contato h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a0a0a;
+}
+
+.contato p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.info-contato a {
+  color: #e1cfa5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
+}
+
 
